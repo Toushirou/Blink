@@ -16,10 +16,11 @@ public class Player extends Applet implements Runnable {
 	private Graphics second;
 
 	private Player() {
-
+		
 	}
 
 	public void update(Graphics g) {
+		
 		if (playerImg == null) {
 			playerImg = createImage(getWidth(), getHeight());
 			second = playerImg.getGraphics();
@@ -30,6 +31,7 @@ public class Player extends Applet implements Runnable {
 		paint(second);
 
 		g.drawImage(playerImg, 0, 0, this);
+		
 	}
 
 	public static Player getInstance() {
